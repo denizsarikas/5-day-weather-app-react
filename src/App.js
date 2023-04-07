@@ -5,7 +5,11 @@ import Footer from "../src/components/Footer"
 
 function App() {
   return (
-    <div className="App">
+    <div className="App"
+      style={{
+        backgroundImage: `url("../src/assets/1.jpg")`
+      }}
+      >
       <Header />
       <Main />
       <Footer />

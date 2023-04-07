@@ -1,0 +1,33 @@
+body{
+
+}
+
+.App{
+    border: solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header{
+    border: solid 1px;
+}
+
+.footer{
+    border: solid 1px;
+}
+.main{
+    border: solid 1px;
+    display: flex;
+    flex-direction: row;
+}
+
+.weathercard{
+    display: flex;
+    flex-direction: column;
+    border: solid 1px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+}
