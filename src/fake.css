@@ -1,5 +1,8 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: black;
 }
 
 .App{
@@ -7,27 +10,64 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column
 }
 
-.header{
+
+.header {
+    color: white;
+    text-align: center;
     border: solid 1px;
-}
+    border-radius: 25%;
+    max-width: 100%;
+    height: 100px;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    background-image: url('https://media.istockphoto.com/id/531889697/photo/weather-forecast-concept.jpg?b=1&s=170667a&w=0&k=20&c=Jci9nrgcCSfOx8ZgfO9KbMKr3r0i28B1fwN20r8KmFA=');
+
+  }
 
 .footer{
     border: solid 1px;
 }
+
 .main{
     border: solid 1px;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.select{
+    margin: 1rem 0px;
 }
 
 .weathercard{
+    border: solid 1px;
     display: flex;
     flex-direction: column;
-    border: solid 1px;
     width: 200px;
     align-items: center;
     justify-content: center;
+    margin: 5px;
+}
+
+.weathercard img{
+    height: 5rem;
+    width: 5rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .main {
+    flex-direction: column; /* switch to column direction */
+    align-items: center; /* center the cards vertically */
+  }
+
+  .header {
+    height: 70px;
+    font-size: 1rem;
+  }
 }
